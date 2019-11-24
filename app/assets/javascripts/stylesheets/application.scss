@@ -1,5 +1,5 @@
-@import '~normalize.css/normalize';
-@import './libs/bootstrap/custom_bootstrap';
+//@import '~normalize.css/normalize';
+//@import './libs/bootstrap/custom_bootstrap';
 
 body {
   background: url("../assets/images/background.svg") no-repeat fixed center;
@@ -24,6 +24,6 @@ body {
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
   padding: 40px;
   border-radius: 5px;
-  border-color: $dark;
-  background-color: $light;
+  //border-color: $dark;
+  //background-color: $light;
 }
