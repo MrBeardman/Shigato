@@ -1,6 +1,5 @@
 class Settings::TagsController < ApplicationController
   before_action :set_settings_tag, only: [:show, :edit, :update, :destroy]
-
   # GET /settings/tags
   # GET /settings/tags.json
   def index
@@ -25,7 +24,7 @@ class Settings::TagsController < ApplicationController
   # POST /settings/tags.json
   def create
     @settings_tag = Settings::Tag.new(settings_tag_params)
-
+  @settings_tag.user = current_user
     respond_to do |format|
       if @settings_tag.save
         format.html { redirect_to @settings_tag, notice: 'Tag was successfully created.' }

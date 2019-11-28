@@ -1,8 +1,9 @@
 class CreateCategories < ActiveRecord::Migration[5.1]
   def change
     create_table :categories do |t|
-      t.color :title
-      t.user :belongs_to
+      t.string :Title
+      t.string :Color
+      t.belongs_to :User, foreign_key: true
 
       t.timestamps
     end

@@ -1,9 +1,11 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  title: 
-  belongs_to: 
+  Title: MyString
+  Color: MyString
+  User: one
 
 two:
-  title: 
-  belongs_to: 
+  Title: MyString
+  Color: MyString
+  User: two

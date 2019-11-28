@@ -2,12 +2,17 @@
 
 <p>
   <strong>Title:</strong>
-  <%= @category.title %>
+  <%= @category.Title %>
 </p>
 
 <p>
-  <strong>Belongs to:</strong>
-  <%= @category.belongs_to %>
+  <strong>Color:</strong>
+  <%= @category.Color %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @category.User %>
 </p>
 
 <%= link_to 'Edit', edit_category_path(@category) %> |
