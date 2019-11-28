@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :categories
   namespace :settings do
     resources :tags
   end
